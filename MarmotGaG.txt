@@ -1,0 +1,52 @@
+
+script_key="jDqdVqUMtKVByeVdKOitfMZOuxaDunky";
+setfpscap(3)
+
+getgenv().gagConfig = {
+    -- Event:
+    CRAFT_EVENT = { "Anti Bee Egg" },
+    PETS_TRADE_DINO = { "Caterpillar", "Seagull", "Crab", "Bee", "Honey Bee", "Flamingo", "Bald Eagle", "Dilophosaurus", "Ankylosaurus", "Spinosaurus", "Pterodactyl", "Brontosaurus", "Seal", "Rooster", "Queen Bee", "Night Owl", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Scarlet Macaw", "Axolotl", "Pack Bee", "Petal Bee", "Bear Bee", "Praying Mantis", "Caterpillar", "Giant Ant", "Snail", "Echo Frog", "Hamster", "Squirrel", "Brown Mouse", "Grey Mouse", "Blood Owl", "Cooked Owl", "Golden Bee", "Owl", "Blood Kiwi", "Firefly", "Dog", "Golden Lab", "Bunny"  },
+    
+    -- General:
+    AUTO_UPDATE_RESTART = true,
+    REDEEM_CODES = {},
+    EXTRA_PET_SLOTS = 2,
+    EXTRA_EGG_SLOTS = 2,
+    ADD_FRIEND = true,
+    OPEN_ALL_SEED_PACK = true,
+
+    MAX_PLANTS = 250,
+    DESTROY_UNTIL_MIN_PLANTS = 230,
+    DELETE_PLANTS_AFTER_MAX = { "Carrot", "Tomato", "Cauliflower"},
+    
+    BUY_EGGS = { "Bug Egg", "Bee Egg", "Paradise Egg", "Mythical Egg", "Rare Summer Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
+    PLANT_EGGS = { "Mythical Egg", "Common Summer Egg", "Rare Egg", "Uncommon Egg" },
+    
+    -- BUY_SEED_SHOP Priority (Left -> Right)
+    BUY_SEED_SHOP = {  ["Blueberry"] = 50, ["Strawberry"] = 50, ["Carrot"] = 100, "Coconut", "Watermelon", "Bamboo", "Mango", "Dragon Fruit", "Pumpkin", "Ember Lily", "Beanstalk", "Cacao", "Pepper", "Mushroom", "Grape", "Cactus", "Apple", ["Daffodil"] = 50, ["Tomato"] = 50, ["Orange Tulip"] = 50 },
+    KEEP_SEEDS = {"Carrot", "Watermelon", "Pumpkin", "Bamboo", "Mango"},
+    KEEP_SEEDS_AFTER_MAX_PLANTS = { "Carrot", "Strawberry", "Blueberry", "Orange Tulip", "Tomato", "Daffodil" },
+    
+    FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
+    SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
+
+    KEEP_PETS = { "Bald Eagle", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Chicken Zombie", ["Dog"] = 3, ["Bunny"] = 3, ["Golden Lab"] = 3 },
+    KEEP_PETS_WEIGHT = 10,
+
+    -- EQUIP_PETS Priority (Left -> Right)
+    EQUIP_PETS = { "Bald Eagle", ["Rooster"] = 2, ["Blood Kiwi"] = 2, ["Chicken"] = 1, ["Starfish"] = 1 },
+
+    BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Recall Wrench", "Watering Can", "Harvest Tool", "Cleaning Spray" },
+    USE_SPRINKLER = { },
+
+    PET_WEBHOOK_URL = "",
+    SEED_WEBHOOK_URL = "", 
+    NOTIFY_PETS = { "Bald Eagle", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Night Owl", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Red Giant Ant", "Hyacinth Macaw", "Axolotl", "Echo Frog", "Bear Bee", "Praying Mantis", "Pterodactyl", "Brontosaurus", "T-Rex", "Dilophosaurus", "Ankylosaurus", "Spinosaurus" },
+    NOTIFY_PETS_WEIGHT = 10,
+    DISCORD_ID = "",
+    WEBHOOK_NOTE = "",
+    SHOW_WEBHOOK_USERNAME = true,
+    SHOW_WEBHOOK_JOBID = true,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/6cb882027ef5de19462b160764dcfb53.lua"))()
