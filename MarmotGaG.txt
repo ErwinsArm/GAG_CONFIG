@@ -30,11 +30,11 @@ getgenv().gagConfig = {
     FAVOURITE_FRUIT_MUTATIONS = {},  -- Stop Autosell
     SKIP_HARVEST_MUTATIONS = {},  -- Stop Harvest
 
-    KEEP_PETS = { "Bald Eagle", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Chicken Zombie" },
+    KEEP_PETS = { ["Dog"] = 5, ["Bunny"] = 5, ["Golden Lab"] = 5, "Bald Eagle", "T-Rex", "Fennec Fox", "Disco Bee", "Raccoon", "Queen Bee", "Dragonfly", "Butterfly", "Mimic Octopus", "Red Fox", "Chicken Zombie" },
     KEEP_PETS_WEIGHT = 10,
 
     -- EQUIP_PETS Priority (Left -> Right)
-    EQUIP_PETS = { "Bald Eagle", ["Rooster"] = 2, ["Blood Kiwi"] = 2, ["Chicken"] = 1, ["Starfish"] = 1 },
+    EQUIP_PETS = { "Golden Lab", "Dog", "Bunny", "Bald Eagle", ["Rooster"] = 2, ["Blood Kiwi"] = 2, ["Chicken"] = 1, ["Starfish"] = 1 },
 
     BUY_GEAR_SHOP = { "Master Sprinkler", "Godly Sprinkler", "Advanced Sprinkler", "Basic Sprinkler", "Recall Wrench", "Watering Can", "Harvest Tool", "Cleaning Spray", "Levelup Lollipop", "Tanning Mirror", "Medium Treat", "Medium Toy" },
     USE_SPRINKLER = { },
